@@ -279,15 +279,6 @@
 }
 
 /* Hearts animation */
-.heart {
-  position: fixed;
-  top: -50px;
-  color: #ff3366;
-  opacity: 0.8;
-  z-index: 1000;
-  animation-name: floatHeart;
-  animation-timing-function: linear;
-}
 
 /* Heart floating animation */
 @keyframes floatHeart {
