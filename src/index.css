@@ -147,3 +147,168 @@
   display: flex;
   justify-content: center;
 }
+
+.letter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffc2d1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Circle Image */
+.img6 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid white;
+  box-shadow: 0 0 15px rgba(255, 0, 120, 0.5);
+}
+
+/* Text animation */
+.animated-text {
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.3s;
+  margin: 10px 0;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Fade in + slide up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button */
+.valentine-btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff3366, #ff6699);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 0, 120, 0.7);
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+
+.valentine-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 0, 120, 1);
+}
+
+/* Hidden div */
+.hidden {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  animation: fadeInUp 1s forwards;
+}
+
+.video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffc2d1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Full screen Valentine background */
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffc2d1);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Title with glow */
+.video-title {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff66aa, 0 0 20px #ff3366, 0 0 30px #ff66aa;
+  animation: titleGlow 2s infinite alternate;
+}
+
+/* Glow animation */
+@keyframes titleGlow {
+  0% {
+    text-shadow: 0 0 5px #ff66aa, 0 0 10px #ff3366, 0 0 15px #ff66aa;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff66aa, 0 0 30px #ff3366, 0 0 45px #ff66aa;
+  }
+}
+
+/* Video styling */
+.love-video {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 0, 120, 0.7);
+  border: 4px solid white;
+}
+
+/* Hearts animation */
+.heart {
+  position: fixed;
+  top: -50px;
+  color: #ff3366;
+  opacity: 0.8;
+  z-index: 1000;
+  animation-name: floatHeart;
+  animation-timing-function: linear;
+}
+
+/* Heart floating animation */
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .video-title {
+    font-size: 1.5rem;
+  }
+
+  .love-video {
+    width: 100%;
+    height: auto;
+  }
+}
