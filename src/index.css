@@ -71,3 +71,79 @@
     justify-content: center;
     overflow: hidden;
 }
+
+.valentine-zigzag {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffc2d1);
+  padding: 40px 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Reverse layout */
+.row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Image style */
+.row img {
+  width: 45%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 4px solid white;
+  box-shadow: 0 0 20px rgba(255, 0, 120, 0.5);
+  transition: 0.4s ease;
+}
+
+.row img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 0, 120, 0.9);
+}
+
+/* Text style */
+.text {
+  width: 45%;
+  color: white;
+}
+
+.text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* 📱 Mobile Layout */
+@media (max-width: 768px) {
+  .row,
+  .row.reverse {
+    flex-direction: column;
+  }
+
+  .row img,
+  .text {
+    width: 100%;
+  }
+
+  .row img {
+    height: 220px;
+  }
+
+  .text {
+    text-align: center;
+  }
+}
+
+.love-button{
+  display: flex;
+  justify-content: center;
+}
