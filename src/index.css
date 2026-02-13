@@ -3,6 +3,71 @@
   margin: 0;
 }
 
-.home{
-  background-color: pink;
+.valentine-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffdde1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.valentine-text {
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(255, 0, 100, 0.8);
+  z-index: 2;
+}
+
+.heart {
+  position: fixed;
+  top: -10px;
+  color: #ff4d6d;
+  animation: fall linear forwards;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+
+
+
+.valentine-btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff3366, #ff6699);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 0, 120, 0.7);
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 30px;
+}
+
+.valentine-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 0, 120, 1);
+}
+
+
+.love{
+   height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffdde1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }

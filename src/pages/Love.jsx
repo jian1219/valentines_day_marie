@@ -1,12 +1,9 @@
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+
+const Love = () => {
 
 
-const Home = () => {
-
-    const navigate = useNavigate();
-
-    useEffect(() => {
+      useEffect(() => {
         const interval = setInterval(() => {
         const heart = document.createElement("div");
         heart.className = "heart";
@@ -25,20 +22,12 @@ const Home = () => {
 
         return () => clearInterval(interval);
     }, []);
+    
+    return (
+        <div className="love">
+            love
+        </div>
+    );
+}
 
-  return (
-    <div className="valentine-container">
-        <h1 className="valentine-text">Happy Valentine's Day</h1>
-         <h1 className="valentine-text">BABY marie💖</h1>
-
-        <button
-          className="valentine-btn"
-          onClick={() => navigate("/love")}
-        >
-          Open My Heart 💘
-        </button>
-    </div>
-  );
-};
-
-export default Home;
+export default Love;
