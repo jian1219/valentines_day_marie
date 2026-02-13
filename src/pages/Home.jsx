@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div className="valentine-container">
         <h1 className="valentine-text">Happy Valentine's Day</h1>
-         <h1 className="valentine-text">BABY marie💖</h1>
+         <h1 className="valentine-text">BABY Marie💖</h1>
 
         <button
           className="valentine-btn"

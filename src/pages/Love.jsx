@@ -2,11 +2,11 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import img1 from "../images/img1.jpg";
-import img2 from "../images/img2.jpg";
-import img3 from "../images/img33.jpg";
-import img4 from "../images/img4.jpg";
-import img5 from "../images/img5.jpg";
+import img1 from "../images/img11.jpg";
+import img2 from "../images/img12.jpg";
+import img3 from "../images/img13.jpg";
+import img4 from "../images/img14.jpg";
+
 
 
 const Love = () => {
